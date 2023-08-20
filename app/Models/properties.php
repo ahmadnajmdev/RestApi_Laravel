@@ -17,7 +17,6 @@ class properties extends Model
 
     protected $guarded = [];
     protected $casts = [
-        'address' => 'json',
         'images' => 'array',
     ];
 

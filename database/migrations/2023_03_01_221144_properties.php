@@ -26,7 +26,7 @@ return new class extends Migration
             $table->integer('bathrooms')->nullable();
             $table->integer('garages')->nullable();
             $table->integer('kitchens')->nullable();
-            $table->json('address');
+            $table->string('address');
             $table->json('images')->nullable();
             $table->softDeletes();
             $table->timestamps();
