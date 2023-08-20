@@ -264,7 +264,8 @@ class api extends Controller
             'bathrooms' => 'nullable|numeric',
             'garages' => 'nullable|numeric',
             'kitchens' => 'nullable|numeric',
-            'address' => 'required|json',
+            'address' => 'required
+            ',
         ]);
 
         if (!$validator->fails()) {

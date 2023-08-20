@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\{User,categories,cities};
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
+
  */
 class propertiesFactory extends Factory
 {
@@ -28,11 +28,8 @@ class propertiesFactory extends Factory
             'bathrooms' => fake()->numberBetween(1, 5),
             'garages' => fake()->numberBetween(1, 5),
             'kitchens' => fake()->numberBetween(1, 5),
-            'address' => [
-                'lat' => fake()->latitude,
-                'lng' => fake()->longitude,
-            ],
-            'images' => ['1.jpg', '2.jpg', '3.jpg']
+            'address' => fake()->address,
+            'images' => ['16892899551454398907.jpg',]
         ];
     }
 }
